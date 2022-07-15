@@ -81,7 +81,20 @@ ABC254B_Practical Computingでもあったが、ifで場合分けをしなくと
 
 # 7/15
 
-pypyの実装。sys.stdin,iteltoorの勉強
+➀sys.stdin.readlineの実装
+
+結論：処理速度にほとんど変化なし
+
+➁itertool
+
+処理速度を大幅に改善するものではなさそうなので、解答で気になったら勉強する感じにする。
+
+③ pypy
+
+ancondaでのインストール法を死ぬほど調べたがよくわからなかった。しかし、単にpythonのコードをatcoderにてpypyとして提出することができるのがわかった。
+
+ただし、pythonでギリギリACだったものを大幅に改善することはできたものの、TLEのものを無理やりACにする力はないのかもしれない。要調査
+
 
 
 
