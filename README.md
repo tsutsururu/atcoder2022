@@ -81,7 +81,7 @@ ABC254B_Practical Computingでもあったが、ifで場合分けをしなくと
 
 # 7/15
 
-pypyの実装。sys.stdinの勉強
+pypyの実装。sys.stdin,iteltoorの勉強
 
 
 
