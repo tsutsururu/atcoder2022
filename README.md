@@ -294,7 +294,7 @@ Z=a+b*1j　によって複素数の表現が可能 abs(Z)により大きさを�
 Bの要素をkeyに、indexを要素にした辞書を作り、Aの要素がBのkeyのどれかに一致する場合にB_dict[A[i]]がiに一致しなければ位置が異なるcountを+1する処理によって実現できる。
 
 
-# s242B MinimizeOrdeing
+# 242B MinimizeOrdeing
 
 解答遷移 TLE → AC
 
@@ -306,6 +306,27 @@ Bの要素をkeyに、indexを要素にした辞書を作り、Aの要素がBの
 ➀ Nはmax 2*10**5であるので2重ループはできないと発想段階で考えておかなくてはならなかった。
 
 ➁ 文字列もsortできる
+
+
+# 241B Pasta
+
+解答遷移 AC
+
+問題把握 01:54  発想確立 02:10  baseコード作成 02:40  デバック&提出 00:59  計 07:45
+
+備考
+
+➀ リストAから要素aを削除  A.remove(a) (破壊的処理)
+
+➁ collections.counter
+
+B=collections.counter(A)によってAの要素をkeyにその頻度をvalueにした辞書っぽいcounterBを作成できる。
+
+辞書と違って存在しないkeyにアクセスでき、その場合0が返る
+
+
+
+
 
 
 
