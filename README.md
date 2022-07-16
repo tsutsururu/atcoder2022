@@ -80,7 +80,7 @@ ABC254B_Practical Computingでもあったが、ifで場合分けをしなくと
 
 appendして not in することで重複を排除する処理よりも早い可能性がある。
 
-④itertools cominations
+④itertools.cominations
 
 combinations(A,n)でリストAから任意にn個取り出したときの組み合わせのiterを作る。
 
@@ -150,14 +150,77 @@ ex) ans=[1,2,3]
 解決策案：「行列の番号処理」「2事象の連動理論の早期発見」をできるよう訓練する
 
 
+# ABC249B Perfect String
+
+解答遷移 AC
+
+問題把握 01:08  発想確立　00:55  baseコード作成 02:26  計05:05 
+
+
+備考
+
+➀ not in タイプのパターン化ができていると感じるが基本的にそれは模範解答でないことが多い。
+
+今回の場合でもset(S) と　len(S) を比較してSにおける文字の重複をforループなしで検出できている。
+
+➁　大(小)文字判定
+
+1, S.islower() ： Sがすべて小文字でTrue
+
+2, S.lower() : Sをすべて小文字化
+
+
+#  ABC248B Slimes
+
+解答遷移 AC
+
+問題把握 00:38  発想確立 00:04  baseコード作成 03:59  デバック&提出 00:36 計 05:17
 
 
 
+# ABC247B Unique Nicknames
+
+解答遷移 WA →　WA　→ AC
+
+問題把握(誤り)　01:52  発想確立 13:58  baseコード作成 05:07  デバック(発想に誤り) 34:55　計 55:53
+
+備考
+
+➀　題意誤りで生じた遅延
+
+➁ itertoolsitertools.chain.from_iterable() →　多重リストを平坦化
+
+⇅
+
+numpy.flatten()　→　多重配列を1次元配列に
+
+③ リストの結合 A[i+1:]+A[:i] (A[i]を除くAの要素のリスト)
+
+⇅
+
+配列の結合 np.concate([A[i+1:]+A[:i]) 
 
 
+④　for ループ内において、2条件が異なるiで成立する場合を考える　→　flagで管理
 
+ex) 3で割れる数と4で割れる数がそれぞれ1つ以上存在するか確認したい
 
+flag1=flag2=False
 
+ans="No"
 
+for i in [5,8,11,9]:
+
+  if i%3==0:
+  
+    flag1=True
+    
+  if i%4==0:
+  
+    flag2=True
+
+if flag1 and flag2:
+
+  ans="Yes
 
 
