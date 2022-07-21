@@ -642,9 +642,29 @@ roundは偶数丸め(14.5 → 14)のように境界で偶数になるように�
 
 
 
+# 224 Mongeness
+
+解答遷移 WA → AC
+
+問題把握 03:54  発想 03:46  base 03:14  デバック&提出 14:58  計 25:54
 
 
+備考
 
+➀ itertools.combinations はイテレータ
+
+A=itertools.combinations(range(3),2)
+
+
+for x in range(2)
+  
+  for i, j in A
+  
+    print((i, j)
+    
+とすると、(0,1) (0,2) (1,2) が一度しか出力されない。2回目のループでも出力するならば再度作りなおす必要がある。
+
+なのでAを作らずinにそのまま突っ込むのが良いと思われる。
 
 
 
