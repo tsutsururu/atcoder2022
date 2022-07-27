@@ -1690,8 +1690,9 @@ itertools.chain.from_iterable()
 
 
 
+⑤ イテレータは要素にアクセスできない
 
-
+'itertools.combinations' object is not subscriptable のTypeErrorが発生
 
 
 
