@@ -797,7 +797,11 @@ for a in A:
  またproduct(A,repeat=3)はproduct(A,A,A)と同義。例えばproduct((0,1),repeat=2)で(0,0),(0,1),(1,0),(1,1)が返る。
  
  
+* 0727 AOJ1160後追記
 
+A=[-1,-1,-1,0,0,1,1,1] B=[-1,0,1,-1,0,1,-1,0,1] のとき
+
+product(A,B)とzip(A,B)は等しい。productの利点はこれをproduct(range(3),repeat=2)で簡単に実装できるところである。
 
 
 
@@ -1630,15 +1634,59 @@ sys.setrecursionlimit(設定したい上限数)で自由に上限を設定しな
 
 
 
+# AOJ1160 島はいくつある？
+
+解答遷移 AC 
+
+計測失敗
+
+備考
+
+➀ zip ,itertoolsはイテレータを作成する。
+
+よってvec=itertools.product([-1,0,1],repeat=2) for v in vec:としてしまうとvvecの要素の数回しか処理を実行できない。直接 for dh,dw in itertools.product(range(2),repea=2)としよう。
+
+
+➁ 複数条件における処理
+
+A=[False,True,False]
+
+for i in range(4):
+
+  if 0<=i<3 and not A[i]:
+  
+    A[i]=True
+    
+と
+
+for i in range(4):
+
+  if not A[i] and 0<=i<3:
+  
+    A[i]=True
 
 
 
+では上のコードでのみ処理が行える。なぜならi=3において下のコードの条件処理の際 A[3]という存在しない要素にアクセスしようとしてエラーを引き起こすためである。上のコードは先に0<=i<3の処理によって i=3をはじいてA[3]にアクセスする処理が行われることなく実行が終了する。
+
+つまり if文における処理は前の条件から処理され、Falseになった時点で処理を終了if文を抜けるというわけである。
+
+
+③ itertools.product(range(3),range(3)) or (range(3),repeat=N)
+
+(0,0) (0,1) (0,2) (1,0) (1,1) (1,2) (2,0) (2,2) (2,2) が出力される。
+
+補足)combinations(range(3),r=2)は0-2の中から2つ選ぶ組み合わせのtupleを返す。
 
 
 
+④ 二次元リストAの要素の和
 
+そのままsum(A)はできない。平坦化するかnumpy化して処理するか
 
+*復習　リストの平坦化
 
+itertools.chain.from_iterable()
 
 
 
