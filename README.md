@@ -1,6 +1,6 @@
 # 07/13
 
-# ABC255B Light It Up
+# ABC255B Light It Up　　済
 
 解答状況 TLE　→　AC 
 
@@ -17,7 +17,7 @@ Ans c=np.sqrt(np.sum((a-b)**2,axis=1))
 
 # 07/14
 
-# ABC254B_Practical Computing
+# ABC254B_Practical Computing　　済
 
 解答遷移 AC
 
@@ -53,7 +53,7 @@ ex) N=3 で 実行前にi=2のとき。 N=0やrange(1,N)でN=1のとき
 問題把握 02:00 発想確立 01:52 baseコード作成 02:21 デバック 03:21  計09:36
 
 
-# ☆ 251B At Most 3 (Jude ver.)
+# 251B At Most 3 (Jude ver.)    済
 
 解答遷移 TLE → 諦め
 
