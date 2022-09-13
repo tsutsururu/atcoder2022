@@ -180,7 +180,7 @@ joinは文字列のリストの要素を追加する。このansなら"".join(ma
 
 
 
-# ABC247B Unique Nicknames
+# ABC247B Unique Nicknames　　　済
 
 解答遷移 WA →　WA　→ AC
 
@@ -232,7 +232,7 @@ if flag1 and flag2:
 
 
 
-# ABC245B Mex
+# ABC245B Mex   済
 
 解答遷移 Re*3 → AC
 
@@ -296,7 +296,7 @@ Z=a+b*1j　によって複素数の表現が可能 abs(Z)により大きさを�
 Bの要素をkeyに、indexを要素にした辞書を作り、Aの要素がBのkeyのどれかに一致する場合にB_dict[A[i]]がiに一致しなければ位置が異なるcountを+1する処理によって実現できる。
 
 
-# 242B MinimizeOrdeing
+# 242B MinimizeOrdeing  済
 
 解答遷移 TLE → AC
 
