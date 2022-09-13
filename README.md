@@ -46,14 +46,14 @@ ex) N=3 で 実行前にi=2のとき。 N=0やrange(1,N)でN=1のとき
 問題把握 02:17 　発想確立 01:18  baseコード作成 05:27  デバック　07:18  計16:21
 
 
-# Takahashi`s Failure
+# 252B Takahashi`s Failure
 
 解答遷移　AC
 
 問題把握 02:00 発想確立 01:52 baseコード作成 02:21 デバック 03:21  計09:36
 
 
-# ☆ At Most 3 (Jude ver.)
+# ☆ 251B At Most 3 (Jude ver.)
 
 解答遷移 TLE → 諦め
 
