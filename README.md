@@ -543,7 +543,7 @@ zip(A,B)でAの要素とBの要素を要素にしたiterを作成する。長さ
 
 
 
-# 230B TripleMetre
+# 230B TripleMetre　　済
 
 解答遷移 WA → AC
 
