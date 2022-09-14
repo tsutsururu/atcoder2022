@@ -376,7 +376,7 @@ B=collections.counter(A)によってAの要素をkeyにその頻度をvalueに�
 
 解答遷移 AC　解答時間 05:13
 
-# B  Better Student Are Needed!
+# B  Better Student Are Needed!     済
 
 解答遷移 AC  解答時間 69:47
 
