@@ -492,7 +492,7 @@ vscodeは落ちて実装時間測定できないし、githubは保存されな�
 A[::-1]で後前を反転できる
 
 
-# 232B Caesar Cipher
+# 232B Caesar Cipher　
 
 解答遷移 WA → AC
 
@@ -601,7 +601,7 @@ roundは偶数丸め(14.5 → 14)のように境界で偶数になるように�
 ➀　1<=i<=Nのとき　index番号と合わせるためにリストの先頭に[0]を付け加える調整をほどこすことができる
 
 
-# 227B KEYENCE building
+# 227B KEYENCE building　　済
 
 解答遷移 AC
 
@@ -614,7 +614,7 @@ roundは偶数丸め(14.5 → 14)のように境界で偶数になるように�
 今回ループの上限を計算で求めたが、計算量に余裕があれば適当な大きい値を入れて実装時間を短く済ませることもできた。
 
 
-# 226B Counting array
+# 226B Counting array　　済
 
 解答遷移 TLE*2 → AC
 
@@ -647,7 +647,7 @@ roundは偶数丸め(14.5 → 14)のように境界で偶数になるように�
 
 
 
-# 224 Mongeness
+# 224 Mongeness　　済
 
 解答遷移 WA → AC
 
