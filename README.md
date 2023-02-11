@@ -1354,7 +1354,7 @@ for i in range(N) for j in range(j)　でNC2通りの処理を実現
 
 # 0726
 
-# ☆215B Log2(N)
+# 215B Log2(N)　済
 
 解答遷移 WA WA AC
 
